@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+  <title>About</title>
+  <style>
+   
+        /* General Styles */
+        body {
+        font-family: Arial, sans-serif;
+    
+background: linear-gradient(to bottom, #d4edda, #a8df8e, #5cb85c);
+        color: #333;
+        margin: 0;
+      }
+      
+      .slider-container {
+        position: relative;
+        max-width: 800px;
+        margin: auto;
+        overflow: hidden;
+        margin-top: 10px;
+        border-radius: 1rem;
+    }
+    .image-slider img{
+      max-width: 700px;
+      height: 600px;
+    }
+    
+    .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .slide {
+        min-width: 100%;
+    }
+    
+    img {
+        width: 100%;
+    }
+    
+    button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(255, 255, 255, 0.7);
+        border: none;
+        cursor: pointer;
+    }
+    
+    .prev {
+        left: 10px;
+    }
+    
+    .next {
+        right: 10px;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: 'Arial', sans-serif;
+       /* background-color: #f9f9f9;*/
+        color: #333;
+      }
+      
+      header {
+        text-align: center;
+        background-image: url(/imgs/g8.jpeg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        color: #fff;
+        padding: 50px 20px;
+      }
+      
+      
+      .hero-section h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+      }
+      
+      .hero-section p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+      }
+       .heading h1 {
+        text-align: center;
+      }
+     
+      
+      .cta-button:hover {
+        background: #e64a19;
+      }
+      
+      nav {
+        background: linear-gradient(to right, #2e7d32, #4caf50);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        height: 80px;
+        border-radius: 2rem;
+      }
+       
+      .logo h1 {
+        display: inline;
+        font-size: 24px;    
+        
+      }
+      
+      .logo img {
+        width: 20vh;
+        height: 20vh;
+      }
+      .heading h1{
+        border: 5px solid forestgreen;
+        border-radius: 1rem;
+        background: #25d36598;
+        color: #a8df8e;
+      }
+      .nav-links {
+        list-style: none;
+        display: flex;
+        border-radius: 5rem;
+      }
+      
+      .nav-links li {
+        margin-left: 20px;
+        
+      }
+      
+      .nav-links li a {
+      text-decoration: none;
+      font-size: 24px;
+      color: #ffffff;
+      border-radius: 2rem;
+      text-decoration: none;
+      font-size: 24px;
+      
+      }
+      
+      .nav-links li a:hover {
+        color: #f39c12;
+      }
+      .nav-toggle {
+        display: none;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: white;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+      }
+      
+      @media screen and (max-width: 768px) {
+        .nav-toggle {
+          display: block;
+        }
+      }
+      .hero-section{
+        background: linear-gradient(to bottom, #66bb6a, #388e3c);
+      }
+      
+      .hero-section button{
+        margin-top: 30px;
+      }
+      /*Buttons*/
+    button.dynamic-button{
+        margin-top: 30px;
+    }
+      .dynamic-button {
+        position: relative;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        background: linear-gradient(135deg, #66bb6a,#388e3c);
+        border: none;
+        border-radius: 5rem;
+        cursor: pointer;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+        text-decoration: none;
+        
+      }
+      .dynamic-button a{
+        text-decoration: none;
+        font-size: 24px;
+      }
+    
+      .dynamic-button:hover {
+        transform: scale(1.1);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        background: linear-gradient(135deg, #ff4500, #ff8c00);
+      }
+    
+      .dynamic-button::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: rgba(255, 255, 255, 0.5);
+        transform: rotate(45deg);
+        transition: all 0.6s ease;
+        opacity: 0;
+      }
+    
+      .dynamic-button:hover::before {
+        opacity: 1;
+        top: 150%;
+        left: 150%;
+        transition: all 0.6s ease;
+      }
+      .headings.dynamic-button li a{
+        list-style: none;
+      }
+      .btn-links {
+       /* list-style: none;*/
+        display: flex;
+      }
+      /*.btn-links:hover {
+        transform: scale(1.1);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        background: linear-gradient(135deg, #ff4500, #ff8c00);
+      }*/
+    
+      .btn{
+        position: relative;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+       /* background: linear-gradient(135deg, #ff8c00, #ff4500);*/
+        border: none;
+        border-radius: 5rem;
+        cursor: pointer;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+        }
+    .btn:hover {
+        transform: scale(1.1);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        background: linear-gradient(135deg, #ff4500, #ff8c00);
+      }
+      .btn::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        /*background: rgba(255, 255, 255, 0.5);*/
+        transform: rotate(45deg);
+        transition: all 0.6s ease;
+        opacity: 0;
+      }
+      .btn:hover::before {
+        opacity: 1;
+        top: 150%;
+        left: 150%;
+        transition: all 0.6s ease;
+      }
+    
+    /*Overlay Button*/
+    .overlay button:hover {
+        background: #f57c00;
+      }
+      .overlay2{
+       background: rgba(0, 0, 0, 0.5);
+       border-radius: 3rem;
+       color: #fff;
+       border: none;
+       padding: 10px 20px;
+       cursor: pointer;
+       font-size: 1rem;
+       transition: background 0.3s ease;
+      }
+      .overlay2 button h2 {
+        background: #ff9800;
+        border-radius: 5rem;
+        font-size: 25px;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s ease-in-out;
+      }
+      .btn-links {
+        list-style: none;
+       
+        color: white;
+        padding: 10px 20px;
+        margin: 5px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+       li button{
+        background-color: #b3006e;
+        border-radius: 5rem;
+        text-align: center;
+        border: none;
+        padding: 10px 20px;
+      }
+      .btn-links li {
+        margin-left: 20px;
+        
+      }
+      
+      .btn-links li a {
+        
+        color: #f39c12;
+        text-decoration: none;
+        font-size: 24px;
+        border-radius: 5rem;
+      }
+      
+      .btn-links li a:hover {
+        color: whitesmoke;
+        
+      }
+      .buttons{
+        background-color: lightgray;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .buttons h2{
+        text-align: center;
+      }
+      .work{
+        text-align: center;
+      }
+      .why-work-with-us {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    color: white;
+}
+.main{
+  box-shadow: whitesmoke;
+;
+}
+.about-us {
+
+    padding: 60px;
+    background: linear-gradient(135deg, #E8F5E9, #C8E6C9);
+    display: flex;
+    justify-content: center;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+}
+
+.about-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-text h2 {
+    font-size: 2.5em;
+    color: #2E7D32;
+}
+
+.about-text p {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+   
+    <nav>
+      <div class="logo">
+        
+            <img src="/imgs/pl21.webp" alt="Logo">
+            <div class="heading">
+            <h1 style="color: lime;" >Green Future Inc.</h1> 
+            </div>
+          </div>
+          <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+          
+          <ul class="nav-links" id="nav-links">
+  <button class="dynamic-button"><li><a href="index.html">Home</a></li></button>
+    <button class="dynamic-button"><li><a href="about.html">About</a></li></button>
+      <button class="dynamic-button"><li><a href="services.html">Services</a></li></button>
+        <button class="dynamic-button"><li><a href="contact.html">Contact</a></li></button>
+          <button class="dynamic-button"><li><a href="new.html">What`s New?</a></li></button>
+  
+          </ul>
+        </nav>
+      
+  <div class="hero">
+        <h1>🌍 Save the Planet & Earn Rewards! 💰</h1>
+        <h2>Join the Green Revolution!<h2><h3><br> A cleaner planet starts with you—earn while you help. 🍃💸</h3>
+        <h1>🔥 Ready to Make a Difference?<h1>
+  <h3>Sign up now for free plastic waste collection and start earning while saving the planet! 🚀♻️</h3>
+        <button class="dynamic-button"><a href="work.html" style="color: lime;">Why Work with Us?</a></button>
+  
+      </div>
+    </header>
+    <div class="work">
+      <button class="dynamic-button"><a href="engrave.html" style="color: lime;">Contact Us Now!</a></button>
+    </div>
+        
+     <section class="main" id="about us">
+    <div class="about-content">
+        <div class="about-text">
+            <h2>About Us 🌱♻️</h2>
+            <p>♻️At GreenFuture Recycling, we are on a mission to revolutionize plastic waste management.</p>
+            <p>♻️We are a dedicated plastic recycling company committed to reducing environmental pollution. <br> ♻️Our mission is to help businesses and households turn plastic waste into a sustainable income while protecting our oceans and rivers from plastic pollution.</p>
+            <p>♻️By providing free plastic collection bins, we make it easy for you to recycle while earning money. ♻️Whether you're a business with bulk plastic waste or a household looking to make a difference, we're here to help.</p>
+            <p>♻️Our company specializes in collecting all types of plastic bags from households, businesses, and manufacturers, transforming waste into valuable resources. <br>♻️ We believe that sustainability and financial rewards can go hand in hand. <br> ♻️By working with us, you help protect the environment while earning extra income—a win for you and the planet!🚀♻️</p>
+          </div>
+
+        <div class="about-image">
+            <img src="/imgs/np2.jpg" alt="Recycling Team at Work">
+        </div>
+    </div>
+   </section>
+
+</body>
+<footer class="footer">
+  <div class="footer-container">
+      <div class="footer-section about">
+          <h2>About Us</h2>
+          <p>Our mission is to help businesses and households turn plastic waste into a sustainable income while protecting our oceans and rivers from plastic pollution.</p>
+      </div>
+      <div class="footer-section links">
+          <h2>Quick Links</h2>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Our Services</a></li>
+              <li><a href="donate.html">Donate</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+      </div>
+      <div class="footer-section contact">
+          <h2>Contact Us</h2>
+          <p>Email: info@greenfuture.org</p>
+          <p>Phone: (123) 456-7890</p>
+          <p>Address: 118 High Street, Turffontein,JHB South Africa</p>
+      </div>
+      <div class="footer-section social-media">
+        <h2>Follow Us</h2>
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+    
+    
+  </div>
+  <div class="footer-bottom">
+      &copy; 2025 Green Future Inc. All rights reserved.
+  </div>
+</footer>
+
+
+
+
+    
+<script src="script.js"></script>
+</body>
+</html>
+</html>

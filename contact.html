@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+  <title>Contact</title>
+</head>
+<body>
+  <header>
+   
+    <nav>
+    <div class="logo">
+      
+          <img src="/imgs/pl21.webp" alt="Logo">
+          <div class="heading">
+          <h1 style="color: lime;" >Green Future Inc.</h1> 
+          </div>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        
+        <ul class="nav-links" id="nav-links">
+<button class="dynamic-button"><li><a href="index.html">Home</a></li></button>
+  <button class="dynamic-button"><li><a href="about.html">About</a></li></button>
+    <button class="dynamic-button"><li><a href="services.html">Services</a></li></button>
+      <button class="dynamic-button"><li><a href="contact.html">Contact</a></li></button>
+        <button class="dynamic-button"><li><a href="new.html">What`s New?</a></li></button>
+
+        </ul>
+      </nav>
+    
+<div class="hero">
+      <h1>🌍 Save the Planet & Earn Rewards! 💰</h1>
+      <h2>💚♻️✊Join the Green Revolution!<h2><h3><br> A cleaner planet starts with you—earn while you help. 🍃💸</h3>
+      <h1>🔥Ready to Make a Difference?<h1>
+<h3>Sign up now for free plastic waste collection and start earning while saving the planet! 🚀♻️</h3>
+      <button class="dynamic-button"><a href="work.html" style="color: lime;">Why Work with Us?</a></button>
+
+    </div>
+  </header>
+  <div class="work">
+    <button class="dynamic-button"><a href="engrave.html" style="color: lime;">Contact Us Now!</a></button>
+  </div>
+      
+</section>
+    <style>
+
+        /* Contact Page Styling */
+        *body{
+            background: red;
+        }
+ .contact {
+    text-align: center;
+    padding: 50px;
+    background:  linear-gradient(to right, green, lime, #2E7D32);
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    color: #2E7D32;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 40px auto;
+    flex-wrap: wrap;
+}
+
+.contact-form, .contact-info {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(245, 245, 245); /* Subtle shadow for depth */
+    border: 3px solid lawngreen;
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+}
+
+.contact-form h3, .contact-info h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #388E3C;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: #388E3C;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.contact-form button:hover {
+    background: #2E7D32;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    color: #555;
+    margin: 10px 0;
+    box-shadow: 0 4px 10px rgb(245, 245, 245); /* Subtle shadow for depth */
+}
+
+.contact-info i {
+    color: #388E3C;
+    margin-right: 10px;
+}
+.heading h2{
+    text-align: center;
+    font-size: 2.5rem;
+    color: darkgreen;
+}
+.heading img{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.map-container iframe{
+  
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    max-width: 100%; /* Limit the width of the form */
+    margin: 50px auto; /* Center the form on the page */
+    padding: 20px; /* Padding inside the container */
+    /*background-color: #fff; /* White background for the form */
+    border-radius: 3rem; /* Rounded corners */
+    box-shadow: 0 4px 10px rgb(245, 245, 245); /* Subtle shadow for depth */
+    height: 80vh;
+}
+.map-container h2{
+background:  linear-gradient(to right, green, lime, #2E7D32);
+  color: red;
+  font-size: 25px;
+  width: 25%;
+  text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <section class="contact">
+        <h2>Contact Us 📞</h2>
+        <p>Have questions? Want to request a bin? Reach out to us!</p>
+
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h3>Send Us a Message</h3>
+                <form action="submit_form.php" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="dynamic-button">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact Details -->
+            <div class="contact-info">
+                <h3>Our Contact Information</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 118 High Street, Turffontein JHB, South Africa</p>
+                <p><i class="fas fa-phone-alt"></i> +27 12 345 6789</p>
+                <p><i class="fas fa-envelope"></i> info@greenfuture-recycling.com</p>
+
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+   
+    
+    <div class="heading"><h2 ><img src="https://maps.google.com/mapfiles/ms/icons/red-dot.png" alt="Google Map Pin" width="20">
+        Find Us</h2></div>
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1000000!2d28.000000!3d-26.000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95b7c9b9b9b9b9%3A0x123456789abcdefg!2s118%20High%20Street%2C%20Turffontein%2C%20JHB!5e0!3m2!1sen!2sza!4v1610000000000!5m2!1sen!2sza"
+            width="1400"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+    </div>
+</div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>About Us</h2>
+                <p>Our mission is to help businesses and households turn plastic waste into a sustainable income while protecting our oceans and rivers from plastic pollution.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Contact Us</h2>
+                <p>Email: info@greenfuture.org</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: 118 High Street, Turffontein,JHB South Africa</p>
+            </div>
+            <div class="footer-section social-media">
+              <h2>Follow Us</h2>
+              <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+          
+          
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Green Future Inc. All rights reserved.
+        </div>
+      </footer>
+      
+ 
+  
+ 
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+    const form = document.querySelector('.contact-container form');
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const messageInput = document.getElementById('message');
+
+    // Error message elements
+    const nameError = document.createElement('div');
+    nameError.className = 'error-message';
+    nameInput.parentNode.insertBefore(nameError, nameInput.nextSibling);
+
+    const emailError = document.createElement('div');
+    emailError.className = 'error-message';
+    emailInput.parentNode.insertBefore(emailError, emailInput.nextSibling);
+
+    const messageError = document.createElement('div');
+    messageError.className = 'error-message';
+    messageInput.parentNode.insertBefore(messageError, messageInput.nextSibling);
+
+    // Validation functions
+    const validateName = () => {
+        if (nameInput.value.trim() === '') {
+            nameError.textContent = 'Name is required';
+            return false;
+        } else if (nameInput.value.trim().length < 3) {
+            nameError.textContent = 'Name must be at least 3 characters';
+            return false;
+        } else {
+            nameError.textContent = '';
+            return true;
+        }
+    };
+
+    const validateEmail = () => {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (emailInput.value.trim() === '') {
+            emailError.textContent = 'Email is required';
+            return false;
+        } else if (!emailRegex.test(emailInput.value)) {
+            emailError.textContent = 'Invalid email format';
+            return false;
+        } else {
+            emailError.textContent = '';
+            return true;
+        }
+    };
+
+    const validateMessage = () => {
+        if (messageInput.value.trim() === '') {
+            messageError.textContent = 'Message is required';
+            return false;
+        } else if (messageInput.value.trim().length < 10) {
+            messageError.textContent = 'Message must be at least 10 characters';
+            return false;
+        } else {
+            messageError.textContent = '';
+            return true;
+        }
+    };
+
+    // Real-time validation
+    nameInput.addEventListener('input', validateName);
+    emailInput.addEventListener('input', validateEmail);
+    messageInput.addEventListener('input', validateMessage);
+
+    // Form submission handler
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        const isNameValid = validateName();
+        const isEmailValid = validateEmail();
+        const isMessageValid = validateMessage();
+
+        if (isNameValid && isEmailValid && isMessageValid) {
+            // Simulate form submission (replace with actual API call)
+            const formData = {
+                name: nameInput.value.trim(),
+                email: emailInput.value.trim(),
+                message: messageInput.value.trim()
+            };
+
+            console.log('Form submitted:', formData); // Replace with fetch() call
+            
+            // Show success message
+            const successMessage = document.createElement('div');
+            successMessage.className = 'success-message';
+            successMessage.textContent = 'Message sent successfully!';
+            form.parentNode.insertBefore(successMessage, form.nextSibling);
+
+            // Reset form
+            form.reset();
+            setTimeout(() => successMessage.remove(), 3000);
+        }
+    });
+});
+
+     /*Break*/
+        function handleEmojiClick(element) {
+            element.classList.add('clicked');
+
+            let span = element.querySelector('span');
+            let count = parseInt(span.textContent);
+            count++;
+            span.textContent = count;
+
+            setTimeout(() => {
+                element.classList.remove('clicked');
+            }, 500);
+        }
+      
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // You can add JavaScript here to handle form data submission
+            // For example, using fetch API to send data to a server
+            // Or display a success message
+
+            alert("Message sent successfully! (This is a placeholder)");
+        });
+  
+    </script>
+</body>
+</html>

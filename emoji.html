@@ -1,0 +1,50 @@
+<style>
+#about {
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+}
+
+#read-more-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#read-more-btn:hover {
+    background-color: #218838;
+}
+
+</style>
+<body>
+<section id="about">
+    <h2>About Us</h2>
+    <p id="about-text">
+        GreenFuture Recycling is dedicated to reducing plastic waste by offering convenient recycling solutions for households and businesses. 
+        <span id="more-text" style="display: none;">
+            We provide plastic waste bins, collect them for free, and compensate our clients for their recyclable materials. Our mission is to protect the environment, prevent plastic pollution in oceans, and create wealth for communities through sustainable recycling.
+        </span>
+    </p>
+    <button id="read-more-btn" onclick="toggleReadMore()">Read More</button>
+</section>
+</body>
+<script>
+    function toggleReadMore() {
+    let moreText = document.getElementById("more-text");
+    let btnText = document.getElementById("read-more-btn");
+
+    if (moreText.style.display === "none") {
+        moreText.style.display = "inline";
+        btnText.innerText = "Read Less";
+    } else {
+        moreText.style.display = "none";
+        btnText.innerText = "Read More";
+    }
+}
+
+</script>
